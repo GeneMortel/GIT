@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="VStream.css">
+    <script src="https://kit.fontawesome.com/b59098f6cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--Header-->
+    <header class="head">
+        <!--Navigation Bar-->
+        <div class="navbar">
+            <img src="Movies/logo.png" class="logo" alt="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="VStream2(Main).html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Genre</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </nav>
+            <img src="Movies/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        
+    <!--BODY-->
+    <div class="container">
+        <div class="row">
+
+            <!--Website Name-->
+            <div class="col-1">
+                <h2>NextVID<br>Video Stream</h2>
+                <!--Call to Action-->
+                <a href="VStream2(Main).html"><button class="button" type="button">Watch Now<img src="Movies/arrow.png"></button></a>
+            </div>
+
+            <!--Landing Page Image-->
+            <div class="col-2">
+                <img src="Movies/landing.png" class="landing">
+            </div>
+        </div>
+    
+        <!--Social Media Links-->
+        <div class="social-links">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+
+        <!--Footer-->
+        <footer class="foot">
+            2022 ©️ All Rights Reserved | Designed and Developed by Team Name
+        </footer>
+
+    </div>
+    
+    <!--Resized Menu List-->
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px"; 
+        function togglemenu() {
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "180px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
